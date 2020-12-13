@@ -32,7 +32,7 @@ function checkInputs() {
     if(passwordVal === ''){
         setErrorFor(password, 'Password cannot be blank')
     } else if(!isPwd(passwordVal)) {
-        setErrorFor(password, 'It is not a valid password')
+        setErrorFor(password, 'password must contain 8-15 Characters including UpperCase or LowerCase letters, number digit, any special characters(!,@,#,$,&,*,% etc.)')
     } else {
         setSuccessFor(password)
     }
