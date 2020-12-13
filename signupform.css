@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    overflow :hidden;
+    font-family: open 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrapper{
+    background-color: indianred;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container{
+    width: 28rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.container h3{
+    font-size: 1.75rem;
+    margin:0;
+}
+form{
+    margin-top: 1rem;
+}
+.inputgroup label{
+    display: block;
+    text-align: left;
+    margin-bottom: 0.25rem;
+    /* width: 100%; */
+    text-transform: capitalize;
+}
+.inputgroup .form-control{
+    height: 35px;
+    border: 2px solid #000;
+    /* width: auto; */
+    border-radius: 4px;
+    padding:0.25rem 0.5rem
+}
+.inputgroup {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    position: relative;
+}
+.submit{
+    width:100%;
+    background-color: indigo;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 0.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding:0.45rem 1rem;
+    border: none;
+    margin-top: 0.5rem;
+}
+.note{
+    font-size: 0.7rem;
+    text-align: left;
+    width:100%;
+}
+.inputgroup i{
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    display: none;
+}
+.inputgroup.success .form-control{
+    border-color: green;
+}
+.inputgroup.success .fa-check-circle{
+    color:green;
+    display: block;
+}
+.inputgroup.success .note{
+    color:green;
+}
+.inputgroup.error .form-control{
+    border-color:red;
+}
+.form-control::placeholder {
+    text-transform: capitalize;
+}
+.inputgroup.error .fa-exclamation-circle{
+    color:red;
+    display: block;
+}
+.inputgroup.error .note{
+    color:red;
+    display: block !important;
+}
